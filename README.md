@@ -7,7 +7,6 @@ It includes multiple datasets and SQL scripts to perform real-world business ana
 
 ---
 
-## 📂 Project Structure
 ## 📁 Project Structure
 
 ```
@@ -42,13 +41,13 @@ sql-data-analytics-project/
 │       └── report_products.sql
 │
 ├── docs/
-│   ├── analytics-workflow.png
+│   └── analytics-workflow.png
 │
-|__DataWarehouseAnalytics.bak
-│
+├── DataWarehouseAnalytics.bak   
 │
 └── README.md
 ```
+
 
 
 
