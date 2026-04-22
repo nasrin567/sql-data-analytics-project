@@ -12,46 +12,54 @@ It includes multiple datasets and SQL scripts to perform real-world business ana
 ```
 sql-data-analytics-project/
 │
-├── data/
-│   ├── raw/                 # Original CSV files (bronze layer)
-│   ├── staging/             # Cleaned data (silver layer)
-│   └── warehouse/           # Final tables (gold layer)
+├── datasets/
+│   ├── csv-files/                          # bronze layer
+│   │   ├── crm_cust_info.csv
+│   │   ├── crm_prd_info.csv
+│   │   ├── crm_sales_details.csv
+│   │   ├── erp_cust_az12.csv
+│   │   ├── erp_loc_a101.csv
+│   │   └── erp_px_cat_g1v2.csv
+│   |
+│   |                                       # silver layer
+│   │   ├── crm_cust_info.csv
+│   │   ├── crm_prd_info.csv
+│   │   ├── crm_sales_details.csv
+│   │   ├── erp_cust_az12.csv
+│   │   ├── erp_loc_a101.csv
+│   │   └── erp_px_cat_g1v2.csv
 │
-├── scripts/
-│   ├── 00_setup/
-│   │   └── init_database.sql
-│   │
-│   ├── 01_staging/
-│   │   ├── crm_cleaning.sql
-│   │   └── erp_cleaning.sql
-│   │
-│   ├── 02_warehouse/
-│   │   ├── dim_customers.sql
-│   │   ├── dim_products.sql
-│   │   └── fact_sales.sql
-│   │
-│   ├── 03_analysis/
-│   │   ├── magnitude_analysis.sql
-│   │   ├── ranking_analysis.sql
-│   │   ├── cumulative_analysis.sql
-│   │   └── segmentation.sql
-│   │
-│   └── 04_reporting/
-│       ├── report_customers.sql
-│       └── report_products.sql
+│   |                                       # gold layer
+│   │   ├── dim_customers.csv
+│   │   ├── dim_products.csv
+│   │   ├── fact_sales.csv
+│   │   ├── report_customers.csv
+│   │   └── report_products.csv
+│
+│   └── DataWarehouseAnalytics.bak
 │
 ├── docs/
 │   └── analytics-workflow.png
 │
-├── DataWarehouseAnalytics.bak   
+├── scripts/
+│   ├── 00_init_database.sql
+│   ├── 01_database_exploration.sql
+│   ├── 02_dimensions_exploration.sql
+│   ├── 03_date_range_exploration.sql
+│   ├── 04_measures_exploration.sql
+│   ├── 05_magnitude_analysis.sql
+│   ├── 06_ranking_analysis.sql
+│   ├── 07_change_over_time_analysis.sql
+│   ├── 08_cumulative_analysis.sql
+│   ├── 09_performance_analysis.sql
+│   ├── 10_data_segmentation.sql
+│   ├── 11_part_to_whole_analysis.sql
+│   ├── 12_report_customers.sql
+│   └── 13_report_products.sql
 │
 └── README.md
 ```
 
-
-
-
----
 
 ## ⚙️ Tools & Technologies
 - SQL Server
