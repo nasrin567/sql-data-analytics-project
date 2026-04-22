@@ -8,18 +8,48 @@ It includes multiple datasets and SQL scripts to perform real-world business ana
 ---
 
 ## 📂 Project Structure
+## 📁 Project Structure
+
+```
 sql-data-analytics-project/
 │
-├── datasets/
-│ ├── csv-files/
-│ └── DataWarehouseAnalytics.bak
+├── data/
+│   ├── raw/                 # Original CSV files (bronze layer)
+│   ├── staging/             # Cleaned data (silver layer)
+│   └── warehouse/           # Final tables (gold layer)
 │
 ├── scripts/
-│ └── 01_init_database.sql
+│   ├── 00_setup/
+│   │   └── init_database.sql
+│   │
+│   ├── 01_staging/
+│   │   ├── crm_cleaning.sql
+│   │   └── erp_cleaning.sql
+│   │
+│   ├── 02_warehouse/
+│   │   ├── dim_customers.sql
+│   │   ├── dim_products.sql
+│   │   └── fact_sales.sql
+│   │
+│   ├── 03_analysis/
+│   │   ├── magnitude_analysis.sql
+│   │   ├── ranking_analysis.sql
+│   │   ├── cumulative_analysis.sql
+│   │   └── segmentation.sql
+│   │
+│   └── 04_reporting/
+│       ├── report_customers.sql
+│       └── report_products.sql
 │
 ├── docs/
+│   ├── analytics-workflow.png
 │
-├── README.md
+|__DataWarehouseAnalytics.bak
+│
+│
+└── README.md
+```
+
 
 
 ---
