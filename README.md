@@ -6,6 +6,21 @@ A comprehensive SQL data analytics project focused on data exploration, transfor
 It includes multiple datasets and SQL scripts to perform real-world business analysis such as customer segmentation, sales trends, and performance metrics.
 
 ---
+## 📊 Data Analytics Workflow
+
+<p align="center">
+  <img src="docs/analytics-workflow.png" width="800">
+</p>
+
+<p align="center"><i>End-to-End Data Analytics Process</i></p>
+
+This workflow illustrates the complete data analytics process:
+
+- **Exploratory Data Analysis (EDA)**: Understanding the dataset through database, dimensions, date, and measures exploration.
+- **Intermediate Analysis**: Includes magnitude and ranking analysis to identify patterns.
+- **Advanced Analytics**: Covers trend analysis, cumulative insights, performance evaluation, and segmentation.
+- **Reporting**: Final step where insights are transformed into meaningful business reports.
+---
 
 ## 📁 Project Structure
 
