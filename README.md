@@ -1,9 +1,11 @@
-# SQL Data Analytics Project
+# 📊 End-to-End SQL Data Analytics Project
 
 ## 📌 Overview
-A comprehensive SQL data analytics project focused on data exploration, transformation, and reporting. This project demonstrates how to analyze structured data using SQL and apply data warehousing concepts.
+A comprehensive end-to-end SQL data analytics project focused on data exploration, transformation, and reporting.
 
-It includes multiple datasets and SQL scripts to perform real-world business analysis such as customer segmentation, sales trends, and performance metrics.
+This project demonstrates how to analyze structured data using SQL and implement data warehousing concepts (Bronze, Silver, Gold layers).
+
+It includes real-world business analysis such as customer segmentation, sales trends, and performance evaluation.
 
 ---
 ## 📊 Data Analytics Workflow
@@ -21,6 +23,19 @@ This workflow illustrates the complete data analytics process:
 - **Advanced Analytics**: Covers trend analysis, cumulative insights, performance evaluation, and segmentation.
 - **Reporting**: Final step where insights are transformed into meaningful business reports.
 ---
+## 📊 Sample Outputs
+
+### 🥇 Top Products by Revenue
+![Top Products](docs/top-products-revenue.png)
+
+### 🥈 Performance Analysis (YoY Comparison)
+![Performance](docs/performance-analysis.png)
+
+### 🥉 Sales Trend Over Time
+![Sales Trend](docs/sales-trend-analysis.png)
+
+### 🏅 Customer Segmentation
+![Customer Segmentation](docs/customer-segmentation.png)
 
 ## 📁 Project Structure
 
@@ -83,7 +98,24 @@ sql-data-analytics-project/
 - Git & GitHub
 
 ---
+## 🎯 Business Problem
 
+Businesses often struggle to:
+- Identify top-performing products
+- Track sales trends over time
+- Understand customer behavior and segmentation
+
+This project solves these problems using SQL-based analytics and data warehousing techniques.
+---
+## 🧠 SQL Concepts Used
+
+- Joins (INNER, LEFT)
+- Aggregations (SUM, COUNT)
+- Window Functions (RANK, LAG, AVG OVER)
+- CTEs (Common Table Expressions)
+- Date Functions (DATETRUNC, YEAR, MONTH)
+
+---
 ## 📊 Key Features
 - Data cleaning and transformation
 - Customer segmentation (VIP, Regular, New)
@@ -100,17 +132,22 @@ sql-data-analytics-project/
 
 ---
 
+
 ## 🚀 How to Use
 
-1. Restore the database using `.bak` file in SQL Server
-2. Run SQL scripts from the `scripts` folder
-3. Explore queries for analysis and reporting
-
+1. Restore the database using the `.bak` file in SQL Server
+2. Execute SQL scripts from the `scripts/` folder in sequence
+3. Run analysis queries to generate insights
 ---
 
-## 📈 Sample Analysis
-- Total sales by customer
-- Monthly sales trends
-- Top-performing products
-- Customer purchase behavior
+## 📊 Sample Analysis
 
+- Customer segmentation (VIP, Regular, New)
+- Monthly sales trend analysis
+- Top-performing products
+- Customer purchasing behavior
+
+---
+## 🏆 Resume Highlight
+
+Built an end-to-end SQL data analytics pipeline using data warehousing concepts (Bronze, Silver, Gold layers) to analyze sales performance and customer behavior.
