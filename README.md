@@ -48,60 +48,66 @@ This workflow illustrates the complete data analytics process:
 
 ---
 
-
 ## 📁 Project Structure
-
+### 🔹 Detailed Structure
 ```
 sql-data-analytics-project/
 │
 ├── datasets/
-│   ├── csv-files/                          # bronze layer
-│   │   ├── crm_cust_info.csv
-│   │   ├── crm_prd_info.csv
-│   │   ├── crm_sales_details.csv
-│   │   ├── erp_cust_az12.csv
-│   │   ├── erp_loc_a101.csv
-│   │   └── erp_px_cat_g1v2.csv
-│   |
-│   |                                       # silver layer
-│   │   ├── crm_cust_info.csv
-│   │   ├── crm_prd_info.csv
-│   │   ├── crm_sales_details.csv
-│   │   ├── erp_cust_az12.csv
-│   │   ├── erp_loc_a101.csv
-│   │   └── erp_px_cat_g1v2.csv
+│ ├── csv-files/
+│ │
+│ │ # Bronze Layer (Raw Data)
+│ │ ├── bronze.crm_cust_info.csv
+│ │ ├── bronze.crm_prd_info.csv
+│ │ ├── bronze.crm_sales_details.csv
+│ │ ├── bronze.erp_cust_az12.csv
+│ │ ├── bronze.erp_loc_a101.csv
+│ │ └── bronze.erp_px_cat_g1v2.csv
+│ │
+│ │ # Silver Layer (Cleaned Data)
+│ │ ├── silver.crm_cust_info.csv
+│ │ ├── silver.crm_prd_info.csv
+│ │ ├── silver.crm_sales_details.csv
+│ │ ├── silver.erp_cust_az12.csv
+│ │ ├── silver.erp_loc_a101.csv
+│ │ └── silver.erp_px_cat_g1v2.csv
+│ │
+│ │ # Gold Layer (Final Analytical Data)
+│ │ ├── gold.dim_customers.csv
+│ │ ├── gold.dim_products.csv
+│ │ ├── gold.fact_sales.csv
+│ │ ├── gold.report_customers.csv
+│ │ └── gold.report_products.csv
+│ │
+│ │ └── placeholder.txt
 │
-│   |                                       # gold layer
-│   │   ├── dim_customers.csv
-│   │   ├── dim_products.csv
-│   │   ├── fact_sales.csv
-│   │   ├── report_customers.csv
-│   │   └── report_products.csv
-│
-│   └── DataWarehouseAnalytics.bak
+│ └── DataWarehouseAnalytics.bak
 │
 ├── docs/
-│   └── analytics-workflow.png
+│ ├── analytics-workflow.png
+│ ├── top-products-revenue.png
+│ ├── performance-analysis.png
+│ ├── sales-trend-analysis.png
+│ └── customer-segmentation.png
 │
 ├── scripts/
-│   ├── 00_init_database.sql
-│   ├── 01_database_exploration.sql
-│   ├── 02_dimensions_exploration.sql
-│   ├── 03_date_range_exploration.sql
-│   ├── 04_measures_exploration.sql
-│   ├── 05_magnitude_analysis.sql
-│   ├── 06_ranking_analysis.sql
-│   ├── 07_change_over_time_analysis.sql
-│   ├── 08_cumulative_analysis.sql
-│   ├── 09_performance_analysis.sql
-│   ├── 10_data_segmentation.sql
-│   ├── 11_part_to_whole_analysis.sql
-│   ├── 12_report_customers.sql
-│   └── 13_report_products.sql
+│ ├── 00_init_database.sql
+│ ├── 01_database_exploration.sql
+│ ├── 02_dimensions_exploration.sql
+│ ├── 03_date_range_exploration.sql
+│ ├── 04_measures_exploration.sql
+│ ├── 05_magnitude_analysis.sql
+│ ├── 06_ranking_analysis.sql
+│ ├── 07_change_over_time_analysis.sql
+│ ├── 08_cumulative_analysis.sql
+│ ├── 09_performance_analysis.sql
+│ ├── 10_data_segmentation.sql
+│ ├── 11_part_to_whole_analysis.sql
+│ ├── 12_report_customers.sql
+│ └── 13_report_products.sql
 │
 └── README.md
 ```
-
 
 ## ⚙️ Tools & Technologies
 - SQL Server
@@ -163,3 +169,15 @@ This project solves these problems using SQL-based analytics and data warehousin
 ## 🏆 Resume Highlight
 
 Built an end-to-end SQL data analytics pipeline using data warehousing concepts (Bronze, Silver, Gold layers) to analyze sales performance and customer behavior.
+
+## 👤 Author
+
+**Nasrin Khatoon**  
+CSE Student | Aspiring Data Analyst  
+
+Focused on:
+- SQL for Data Analysis  
+- Data Cleaning & Transformation  
+- Data Warehousing (Bronze, Silver, Gold layers)  
+- Analytical Querying & Business Insights  
+
