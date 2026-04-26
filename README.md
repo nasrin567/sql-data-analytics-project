@@ -39,6 +39,18 @@ This workflow illustrates the complete data analytics process:
 
 ## 📁 Project Structure
 
+### 🔹 Simplified View
+
+- **datasets/** → Raw, cleaned, and transformed data (Bronze, Silver, Gold layers using file naming)
+- **scripts/** → SQL queries for exploration, analysis, and reporting  
+- **docs/** → Workflow diagram and output screenshots  
+- **README.md** → Project documentation  
+
+---
+
+
+## 📁 Project Structure
+
 ```
 sql-data-analytics-project/
 │
