@@ -170,7 +170,7 @@ This project solves these problems using SQL-based analytics and data warehousin
 
 Built an end-to-end SQL data analytics pipeline using data warehousing concepts (Bronze, Silver, Gold layers) to analyze sales performance and customer behavior.
 
-## 👤 Author
+## 👩‍💻 Author
 
 **Nasrin Khatoon**  
 CSE Student | Aspiring Data Analyst  
