@@ -179,5 +179,6 @@ Focused on:
 - SQL for Data Analysis  
 - Data Cleaning & Transformation  
 - Data Warehousing (Bronze, Silver, Gold layers)  
-- Analytical Querying & Business Insights  
+- Analytical Querying & Business Insights
+- wrewt
 
