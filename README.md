@@ -180,5 +180,5 @@ Focused on:
 - Data Cleaning & Transformation  
 - Data Warehousing (Bronze, Silver, Gold layers)  
 - Analytical Querying & Business Insights
-- wrewt
+  
 
